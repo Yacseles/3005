@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "left image1 image2 right"
+        "left image1 image2 right"
+        "below below below below";
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #b0bef0;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+.image1 {
+    grid-area: image1;
+    position: relative;
+}
+
+.image2 {
+    grid-area: image2;
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px; /* Increase this value to make the images larger */
+    height: auto; /* Adjust height to maintain aspect ratio */
+}
+
+.text.left {
+    grid-area: left;
+}
+
+.text.right {
+    grid-area: right;
+}
+
+.text.below {
+    grid-area: below;
+}
+
+.text.above {
+    position: absolute;
+    top: -40px; /* Adjust this value based on the desired distance above the image */
+    width: 100%;
+    text-align: center;
+}
