@@ -1,0 +1,81 @@
+body {
+    background-color: #b0bef0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(20, 40px); /* 20 columns */
+    grid-template-rows: repeat(12, 40px); /* 12 rows */
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #C8A2C8;
+    border: 1px solid #ccc;
+}
+
+.wall {
+    background-color: #000;
+}
+
+.player {
+    background-image: url('images/me.4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.exit {
+    background-image: url('images/miya.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+#level {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#nextPageButton {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nextPageButton:hover {
+    background-color: #45a049;
+}
+
+
